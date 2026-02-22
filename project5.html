@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Methods in Javascript
+
+        let footballers=["Lionel Messi","Neymar","Rodrigo de Paul","Angel di Maria","C.Ronaldo","Ronaldo 9","Maradona","Gattuso","Alfredo Di Stefano","Haaland","Mbappe",]
+
+        //Index starts from 0
+        document.write("My best footballer is " + footballers[0])
+        document.write("<br>")
+        document.write("<br>")
+
+
+        //Writes the /& sign to space the names
+        document.write(footballers.join("/&"));
+        document.write("<br>");
+        document.write("<br>");
+
+        //Counts the length and writes it out
+        document.write( "They are " + footballers.length + " in number");
+        document.write("<br>");
+        document.write("<br>");
+
+        //Adds an extra name
+        document.write( "Now they are " + footballers.push("Ronaldinho"));
+        document.write("<br>");
+        document.write("<br>")
+
+        //Adding another item and displaying the new length
+        document.write(footballers);
+        document.write("<br>");
+        document.write("<br>");
+
+        //Removes the name at the front
+        document.write(footballers.shift());
+        document.write("<br>");
+
+        //Declaring another array
+        let coaches=["Pep Guardiola","Mikel Arteta","Jose Mourinho","Luis Enrique","Hansi Flick","Xabi Alonso"];
+        document.write("<br>");
+
+        //Concat/Merging arrays
+        document.write(footballers.concat(coaches))
+        document.write("<br>");
+        document.write("<br>");
+
+        //Removes the last person and prints it out
+        document.write(footballers.pop())
+        document.write("<br>")
+        document.write("<br>")
+
+        //Ronaldinho has been removed
+        document.write(footballers)
+        document.write("<br>")
+        document.write("<br>")
+        //Call Stack
+        function divide(x,y){
+            return x/y
+        }
+        function average(x,y){
+            return divide(x,y)
+        }
+        document.write(divide(290,23)/4)
+    </script>
+</body>
+</html>
